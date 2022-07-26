@@ -9,6 +9,11 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         {
+            if (word == null || word.Length == 0)
+            {
+                return false;
+            }
+
             var reversed = "";
 
             for (int i = word.Length - 1; i >= 0; i--)

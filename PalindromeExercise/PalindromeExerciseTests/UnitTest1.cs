@@ -13,6 +13,8 @@ namespace PalindromeExerciseTests
             [InlineData("madam", true)]
             [InlineData("noon", true)]
             [InlineData("tooth", false)]
+            [InlineData("", false)]
+            [InlineData("null", false)]
         public void IsAPalindrome(string word, bool expected)
         {
             // Arrange
